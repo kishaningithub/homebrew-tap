@@ -1,2 +1,2 @@
-# homebrew-taps
+# Tap
  Homebrew taps for my projects
