@@ -2,9 +2,9 @@
 class ShopifyCsvDownload < Formula
   desc "Download a shopify site in a csv format that the shopify importer understands"
   homepage "https://github.com/kishaningithub/shopify-csv-download"
-  url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.2.0/shopify-csv-download_0.2.0_darwin_amd64.tar.gz"
-  version "0.2.0"
-  sha256 "bd22dcdf4aa359ec0cb04a2551272fca39d37cc1fa92df4ec9ee5981c361a5cd"
+  url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.5.0/shopify-csv-download_0.5.0_darwin_amd64.tar.gz"
+  version "0.5.0"
+  sha256 "1347bf1e508a9eaaefb89b8d6d580083ffd4b722e60121a27581a5e47dd042f9"
 
   def install
     bin.install "shopify-csv-download"
