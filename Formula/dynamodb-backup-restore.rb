@@ -2,9 +2,9 @@
 class DynamodbBackupRestore < Formula
   desc "A no sweat backup and restore tool for dynamodb"
   homepage "https://github.com/kishaningithub/dynamodb-backup-restore"
-  url "https://github.com/kishaningithub/dynamodb-backup-restore/releases/download/v1.0.0/dynamodb-backup-restore_1.0.0_darwin_amd64.tar.gz"
-  version "1.0.0"
-  sha256 "33384ba0add0cf7e5d8b6a5b209ea0fa969e5bdab6091d6e4382d0e032b31a53"
+  url "https://github.com/kishaningithub/dynamodb-backup-restore/releases/download/v1.0.1/dynamodb-backup-restore_1.0.1_darwin_amd64.tar.gz"
+  version "1.0.1"
+  sha256 "d5ca306436255163d80e21928035d7d6a75f3db2185d778a7de4b6c026ba7a33"
 
   def install
     bin.install "dynamodb-backup-restore"
