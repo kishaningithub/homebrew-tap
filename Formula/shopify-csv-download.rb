@@ -2,16 +2,16 @@
 class ShopifyCsvDownload < Formula
   desc "Download a shopify site in a csv format that the shopify importer understands"
   homepage "https://github.com/kishaningithub/shopify-csv-download"
-  version "0.10.0"
+  version "0.11.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.10.0/shopify-csv-download_0.10.0_darwin_amd64.tar.gz"
-    sha256 "84074ccd31eaf05d588eb0a88b16a8e25aa0187f6021b3c1f4b65ace5254815a"
+    url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.0/shopify-csv-download_0.11.0_darwin_amd64.tar.gz"
+    sha256 "afbe9302e093ce6b08f64a5993a6db1466a8cccfccbe70bf30d5dfb108ba34f1"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.10.0/shopify-csv-download_0.10.0_linux_amd64.tar.gz"
-      sha256 "f2887da6c205ad25b2f17bcb49f05ba8590eabdd49f12b3d74d1dee56bd7fa83"
+      url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.0/shopify-csv-download_0.11.0_linux_amd64.tar.gz"
+      sha256 "36c75c830b9c3f5ea3da995dca14da79c1f4bc51d90075caa4757bc72652bafd"
     end
   end
 
