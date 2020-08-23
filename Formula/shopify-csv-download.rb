@@ -7,11 +7,11 @@ class ShopifyCsvDownload < Formula
 
   if OS.mac?
     url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.2/shopify-csv-download_0.11.2_darwin_amd64.tar.gz"
-    sha256 "844344efff35554e42a3da4183a59d64c7d0ef80c706a7d1be0b8d5e78a95ba0"
+    sha256 "6ee9c09cd18a8b9b57344bc6c29e7e1b1539e91011d73c79a340d147c629d951"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.2/shopify-csv-download_0.11.2_linux_amd64.tar.gz"
-      sha256 "d6486ca6c2a0a888d86b4513c056465084bb28c2a178b386429d74cd07624495"
+      sha256 "658ee5f6bd7fbdcb19c903130a163fdcf8598413665ec58aeae14de3e77a9716"
     end
   end
 
