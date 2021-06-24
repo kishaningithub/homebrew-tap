@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.0.4"
+  version "0.0.5"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.4/kafka-perf_0.0.4_darwin_amd64.tar.gz"
-      sha256 "fa7fd8b7d5a63edbd27fd736cab2bf023fafbdf9921a81e177f76523010930fe"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.5/kafka-perf_0.0.5_darwin_amd64.tar.gz"
+      sha256 "e8e6e4fee643aebd16c9d78786056bbcae688816c552662ab15d5e3cf1399e19"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.4/kafka-perf_0.0.4_darwin_arm64.tar.gz"
-      sha256 "89ada819d2d9f9cc86b0561b25021a727d48ef80b53ec5e9393dc88d871916c6"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.5/kafka-perf_0.0.5_darwin_arm64.tar.gz"
+      sha256 "803746c4b3327e82855b3d526e3040a4d689bfdef501ad731534bb79483a2b92"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.4/kafka-perf_0.0.4_linux_amd64.tar.gz"
-      sha256 "f76e9484e93307b252f1ab2552c47b48110d1992d1b983714fe9621402208632"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.5/kafka-perf_0.0.5_linux_amd64.tar.gz"
+      sha256 "ff3133dd4486a8979aee3aab554e3315bd39f6858468b414e50915fca613210a"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.4/kafka-perf_0.0.4_linux_arm64.tar.gz"
-      sha256 "fccaf75ec9404148f5a9340bc8e8e252680100a4ab5dae0b0762197ceb51da1c"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.5/kafka-perf_0.0.5_linux_arm64.tar.gz"
+      sha256 "ed9ab4afa70175ff0cb278c6152c47568812dfce113d509bdda9f51b8a78bc78"
     end
   end
 
