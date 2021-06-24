@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.0.3"
+  version "0.0.4"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.3/kafka-perf_0.0.3_darwin_amd64.tar.gz"
-      sha256 "93ae8d423d94d57f1aa6048d85c1e164c19004e32c1719ce9c494aacc53fe406"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.4/kafka-perf_0.0.4_darwin_amd64.tar.gz"
+      sha256 "fa7fd8b7d5a63edbd27fd736cab2bf023fafbdf9921a81e177f76523010930fe"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.3/kafka-perf_0.0.3_darwin_arm64.tar.gz"
-      sha256 "14f10ebea5cb24a9fab351facdba96f442c3c031c2f0c3992d90ae02f3223a5f"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.4/kafka-perf_0.0.4_darwin_arm64.tar.gz"
+      sha256 "89ada819d2d9f9cc86b0561b25021a727d48ef80b53ec5e9393dc88d871916c6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.3/kafka-perf_0.0.3_linux_amd64.tar.gz"
-      sha256 "e94996d0f4a722236727349ffd7279de74f1943ab843a3426162eaab43870507"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.4/kafka-perf_0.0.4_linux_amd64.tar.gz"
+      sha256 "f76e9484e93307b252f1ab2552c47b48110d1992d1b983714fe9621402208632"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.3/kafka-perf_0.0.3_linux_arm64.tar.gz"
-      sha256 "4cd5a8de3aefd8874954b0737fbde0c233abdf18f57baffa2483796dae8aeb0c"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.4/kafka-perf_0.0.4_linux_arm64.tar.gz"
+      sha256 "fccaf75ec9404148f5a9340bc8e8e252680100a4ab5dae0b0762197ceb51da1c"
     end
   end
 
