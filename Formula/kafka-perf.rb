@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.0.5"
+  version "0.0.6"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.5/kafka-perf_0.0.5_darwin_amd64.tar.gz"
-      sha256 "e8e6e4fee643aebd16c9d78786056bbcae688816c552662ab15d5e3cf1399e19"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.6/kafka-perf_0.0.6_darwin_amd64.tar.gz"
+      sha256 "5827fc0f87f9e173a39d0fc0265d17a7984f16e9212884cf97f10e73806329b6"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.5/kafka-perf_0.0.5_darwin_arm64.tar.gz"
-      sha256 "803746c4b3327e82855b3d526e3040a4d689bfdef501ad731534bb79483a2b92"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.6/kafka-perf_0.0.6_darwin_arm64.tar.gz"
+      sha256 "ca6b2bd0d1b20c278ac698e1cd806722bcf44b0762f044483e717d0d5d0e117c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.5/kafka-perf_0.0.5_linux_amd64.tar.gz"
-      sha256 "ff3133dd4486a8979aee3aab554e3315bd39f6858468b414e50915fca613210a"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.6/kafka-perf_0.0.6_linux_amd64.tar.gz"
+      sha256 "82a78044a0bfd53f9fcceedc860da549615e7b414d4e3f3f60056f5a4d536910"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.5/kafka-perf_0.0.5_linux_arm64.tar.gz"
-      sha256 "ed9ab4afa70175ff0cb278c6152c47568812dfce113d509bdda9f51b8a78bc78"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.6/kafka-perf_0.0.6_linux_arm64.tar.gz"
+      sha256 "c4cd770946d020d5afca13b44dfa41ad5dbf132e9a6b711dfae62e1bf0285f2e"
     end
   end
 
