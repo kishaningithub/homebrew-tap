@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.0.6"
+  version "0.0.7"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.6/kafka-perf_0.0.6_darwin_amd64.tar.gz"
-      sha256 "5827fc0f87f9e173a39d0fc0265d17a7984f16e9212884cf97f10e73806329b6"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.7/kafka-perf_0.0.7_darwin_amd64.tar.gz"
+      sha256 "01e8970bd9f391abfe9c299911c5a4ba29e466296083650ecb73b82a92855318"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.6/kafka-perf_0.0.6_darwin_arm64.tar.gz"
-      sha256 "ca6b2bd0d1b20c278ac698e1cd806722bcf44b0762f044483e717d0d5d0e117c"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.7/kafka-perf_0.0.7_darwin_arm64.tar.gz"
+      sha256 "a0cb5201953dbe6dd0110e0acf7586a2224ba6556fc7c6ad3ae0713509cd4c80"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.6/kafka-perf_0.0.6_linux_amd64.tar.gz"
-      sha256 "82a78044a0bfd53f9fcceedc860da549615e7b414d4e3f3f60056f5a4d536910"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.7/kafka-perf_0.0.7_linux_amd64.tar.gz"
+      sha256 "ae98ad6bcf7342a6fb809d87ed294678a06a17a93bd9315eef23aef4f01c3894"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.6/kafka-perf_0.0.6_linux_arm64.tar.gz"
-      sha256 "c4cd770946d020d5afca13b44dfa41ad5dbf132e9a6b711dfae62e1bf0285f2e"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.7/kafka-perf_0.0.7_linux_arm64.tar.gz"
+      sha256 "d9717fdccc4d681ed7b7aaa445881fd05c11e837eb0b4069ec6cd0045cbb43b6"
     end
   end
 
