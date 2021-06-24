@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.0.2"
+  version "0.0.3"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.2/kafka-perf_0.0.2_darwin_amd64.tar.gz"
-      sha256 "00bfa845035ebbbacaa83febdd95d80fca1248b2ced2fdbfcb1ce6ba36e781d8"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.3/kafka-perf_0.0.3_darwin_amd64.tar.gz"
+      sha256 "93ae8d423d94d57f1aa6048d85c1e164c19004e32c1719ce9c494aacc53fe406"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.2/kafka-perf_0.0.2_darwin_arm64.tar.gz"
-      sha256 "e2140f8c7f124104554a4614e999d4659dd59a97de351e90b02f2321048f2be6"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.3/kafka-perf_0.0.3_darwin_arm64.tar.gz"
+      sha256 "14f10ebea5cb24a9fab351facdba96f442c3c031c2f0c3992d90ae02f3223a5f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.2/kafka-perf_0.0.2_linux_amd64.tar.gz"
-      sha256 "2fda6f8a4898de8be37420240b5b7872ad6b9b5819f58f7fa9f85b6b85580aa6"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.3/kafka-perf_0.0.3_linux_amd64.tar.gz"
+      sha256 "e94996d0f4a722236727349ffd7279de74f1943ab843a3426162eaab43870507"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.2/kafka-perf_0.0.2_linux_arm64.tar.gz"
-      sha256 "dd20f2fd543f4ea4d985411590908e3850e4d2010ef5cf8ee64e57e0a10e0743"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.3/kafka-perf_0.0.3_linux_arm64.tar.gz"
+      sha256 "4cd5a8de3aefd8874954b0737fbde0c233abdf18f57baffa2483796dae8aeb0c"
     end
   end
 
