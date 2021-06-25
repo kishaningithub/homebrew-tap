@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.0.7"
+  version "0.1.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.7/kafka-perf_0.0.7_darwin_amd64.tar.gz"
-      sha256 "01e8970bd9f391abfe9c299911c5a4ba29e466296083650ecb73b82a92855318"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.1.0/kafka-perf_0.1.0_darwin_amd64.tar.gz"
+      sha256 "3186fef8f4be663fea02ef8b151951108f76f38f4ab405da3ebdccf21ca989d3"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.7/kafka-perf_0.0.7_darwin_arm64.tar.gz"
-      sha256 "a0cb5201953dbe6dd0110e0acf7586a2224ba6556fc7c6ad3ae0713509cd4c80"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.1.0/kafka-perf_0.1.0_darwin_arm64.tar.gz"
+      sha256 "8bd6a0a3fe73cc78b63393019c9bbd8c6c5b8a8133722b8202432ef8c861d4d0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.7/kafka-perf_0.0.7_linux_amd64.tar.gz"
-      sha256 "ae98ad6bcf7342a6fb809d87ed294678a06a17a93bd9315eef23aef4f01c3894"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.1.0/kafka-perf_0.1.0_linux_amd64.tar.gz"
+      sha256 "72edce7a680e4f017a6da3fd96f9489db6c42d9d3d4cd1c2b81d404b650605b3"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.0.7/kafka-perf_0.0.7_linux_arm64.tar.gz"
-      sha256 "d9717fdccc4d681ed7b7aaa445881fd05c11e837eb0b4069ec6cd0045cbb43b6"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.1.0/kafka-perf_0.1.0_linux_arm64.tar.gz"
+      sha256 "14e6549028bcffb19a67d5cf7311973919164d2bc79ad7b048bb0234dccc7690"
     end
   end
 
