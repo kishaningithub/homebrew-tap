@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.2.0"
+  version "0.2.1"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.0/kafka-perf_0.2.0_darwin_amd64.tar.gz"
-      sha256 "056324e51c378d10025ef9bbb7903c8f941a9bec687b60df3dfec044b48fc626"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.1/kafka-perf_0.2.1_darwin_amd64.tar.gz"
+      sha256 "9dded660a48d2940b1d5e122d2055d1a7bbe9f4cb50e0e1b97b9aa6d0fd89ab9"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.0/kafka-perf_0.2.0_darwin_arm64.tar.gz"
-      sha256 "83e866b2c5814b500928a832dc205eefe53efa947fd70a6b5778155c31f469c8"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.1/kafka-perf_0.2.1_darwin_arm64.tar.gz"
+      sha256 "2316fee099646b090030bbaf82610d5ed24100fee076435ad7325865a4d045e7"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.0/kafka-perf_0.2.0_linux_amd64.tar.gz"
-      sha256 "25d75d94b14e90861b249d9508739db0787b636fe7ab0eec093d5fab6e29e148"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.1/kafka-perf_0.2.1_linux_amd64.tar.gz"
+      sha256 "f46563ed2fdc4cf123a34a6d37bc3f121d2079d87de3189eb06559d575fbe966"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.0/kafka-perf_0.2.0_linux_arm64.tar.gz"
-      sha256 "c7ab6b8ed30ef487e9eeb09896d5b96fa97bdba0d1d09fcda549497651161cb9"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.1/kafka-perf_0.2.1_linux_arm64.tar.gz"
+      sha256 "213ecc2d8d7a3f8ff2e44fb5a9cafd3579ba6f8c81cead3ba2806c0f9db8dd04"
     end
   end
 
