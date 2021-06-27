@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.1.0"
+  version "0.2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.1.0/kafka-perf_0.1.0_darwin_amd64.tar.gz"
-      sha256 "3186fef8f4be663fea02ef8b151951108f76f38f4ab405da3ebdccf21ca989d3"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.0/kafka-perf_0.2.0_darwin_amd64.tar.gz"
+      sha256 "056324e51c378d10025ef9bbb7903c8f941a9bec687b60df3dfec044b48fc626"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.1.0/kafka-perf_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8bd6a0a3fe73cc78b63393019c9bbd8c6c5b8a8133722b8202432ef8c861d4d0"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.0/kafka-perf_0.2.0_darwin_arm64.tar.gz"
+      sha256 "83e866b2c5814b500928a832dc205eefe53efa947fd70a6b5778155c31f469c8"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.1.0/kafka-perf_0.1.0_linux_amd64.tar.gz"
-      sha256 "72edce7a680e4f017a6da3fd96f9489db6c42d9d3d4cd1c2b81d404b650605b3"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.0/kafka-perf_0.2.0_linux_amd64.tar.gz"
+      sha256 "25d75d94b14e90861b249d9508739db0787b636fe7ab0eec093d5fab6e29e148"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.1.0/kafka-perf_0.1.0_linux_arm64.tar.gz"
-      sha256 "14e6549028bcffb19a67d5cf7311973919164d2bc79ad7b048bb0234dccc7690"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.0/kafka-perf_0.2.0_linux_arm64.tar.gz"
+      sha256 "c7ab6b8ed30ef487e9eeb09896d5b96fa97bdba0d1d09fcda549497651161cb9"
     end
   end
 
