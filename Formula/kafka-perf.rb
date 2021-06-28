@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.3.1"
+  version "0.3.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.1/kafka-perf_0.3.1_darwin_amd64.tar.gz"
-      sha256 "41e4e123d33d633a74a3921af42a975d60ca2bf2426b3fd637fdf947604232d1"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.2/kafka-perf_0.3.2_darwin_amd64.tar.gz"
+      sha256 "5c248b5595c9d4849294f53a882f8aef80a26aeaa4d3e4c992a26779e684764d"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.1/kafka-perf_0.3.1_darwin_arm64.tar.gz"
-      sha256 "fe7d0c75fd160f0096f7f28fbdffa73a5a99df95f80a3ee5e58c3a679c0e06dc"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.2/kafka-perf_0.3.2_darwin_arm64.tar.gz"
+      sha256 "d4d2da90902a96bf69e4a5809e834c0380a0acfef15ccd5b65e3624b1912e9de"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.1/kafka-perf_0.3.1_linux_amd64.tar.gz"
-      sha256 "436f56b5f41bebab57645b94df390dbc623b37d0307c9ec5b239a28dffe12049"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.2/kafka-perf_0.3.2_linux_amd64.tar.gz"
+      sha256 "c240f1dbcf77740e788997b6c1769f9ec02c38bc7faf6f5797490f87a73431bc"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.1/kafka-perf_0.3.1_linux_arm64.tar.gz"
-      sha256 "8434aeabfe4bc7cb2535f579c8bd130759ba11d0e43ec580067b06ad2b0ea791"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.2/kafka-perf_0.3.2_linux_arm64.tar.gz"
+      sha256 "7cb2b315792d5b809550068aa09697e418ce7bfd93e5385a4a0d022960ae5ebf"
     end
   end
 
