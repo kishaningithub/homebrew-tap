@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.3.0"
+  version "0.3.1"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.0/kafka-perf_0.3.0_darwin_amd64.tar.gz"
-      sha256 "deb86ddaf302e92eecf5184ee4f46088c79d55a26b4260b5613c57f94388f724"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.1/kafka-perf_0.3.1_darwin_amd64.tar.gz"
+      sha256 "41e4e123d33d633a74a3921af42a975d60ca2bf2426b3fd637fdf947604232d1"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.0/kafka-perf_0.3.0_darwin_arm64.tar.gz"
-      sha256 "2d95f08a1311836a8927f8295c7190076c896996791c2a6381e8c8dc7b1b728e"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.1/kafka-perf_0.3.1_darwin_arm64.tar.gz"
+      sha256 "fe7d0c75fd160f0096f7f28fbdffa73a5a99df95f80a3ee5e58c3a679c0e06dc"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.0/kafka-perf_0.3.0_linux_amd64.tar.gz"
-      sha256 "3680604be3aa53424fbbc77abb3032321bb010886551ce66a439c71659c43526"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.1/kafka-perf_0.3.1_linux_amd64.tar.gz"
+      sha256 "436f56b5f41bebab57645b94df390dbc623b37d0307c9ec5b239a28dffe12049"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.0/kafka-perf_0.3.0_linux_arm64.tar.gz"
-      sha256 "3cf11b401aed2daaabe93d5119b93fde2dcdce68357fdf53f9ec12d3068c7e5c"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.1/kafka-perf_0.3.1_linux_arm64.tar.gz"
+      sha256 "8434aeabfe4bc7cb2535f579c8bd130759ba11d0e43ec580067b06ad2b0ea791"
     end
   end
 
