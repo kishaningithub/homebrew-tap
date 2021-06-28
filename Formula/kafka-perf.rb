@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.2.1"
+  version "0.3.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.1/kafka-perf_0.2.1_darwin_amd64.tar.gz"
-      sha256 "9dded660a48d2940b1d5e122d2055d1a7bbe9f4cb50e0e1b97b9aa6d0fd89ab9"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.0/kafka-perf_0.3.0_darwin_amd64.tar.gz"
+      sha256 "deb86ddaf302e92eecf5184ee4f46088c79d55a26b4260b5613c57f94388f724"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.1/kafka-perf_0.2.1_darwin_arm64.tar.gz"
-      sha256 "2316fee099646b090030bbaf82610d5ed24100fee076435ad7325865a4d045e7"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.0/kafka-perf_0.3.0_darwin_arm64.tar.gz"
+      sha256 "2d95f08a1311836a8927f8295c7190076c896996791c2a6381e8c8dc7b1b728e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.1/kafka-perf_0.2.1_linux_amd64.tar.gz"
-      sha256 "f46563ed2fdc4cf123a34a6d37bc3f121d2079d87de3189eb06559d575fbe966"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.0/kafka-perf_0.3.0_linux_amd64.tar.gz"
+      sha256 "3680604be3aa53424fbbc77abb3032321bb010886551ce66a439c71659c43526"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.2.1/kafka-perf_0.2.1_linux_arm64.tar.gz"
-      sha256 "213ecc2d8d7a3f8ff2e44fb5a9cafd3579ba6f8c81cead3ba2806c0f9db8dd04"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.0/kafka-perf_0.3.0_linux_arm64.tar.gz"
+      sha256 "3cf11b401aed2daaabe93d5119b93fde2dcdce68357fdf53f9ec12d3068c7e5c"
     end
   end
 
