@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.3.2"
+  version "0.3.3"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.2/kafka-perf_0.3.2_darwin_amd64.tar.gz"
-      sha256 "5c248b5595c9d4849294f53a882f8aef80a26aeaa4d3e4c992a26779e684764d"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.3/kafka-perf_0.3.3_darwin_amd64.tar.gz"
+      sha256 "f07e5f387238ab69ddb9aa672b83e697804409f58ae6fee67a22a829ab919d97"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.2/kafka-perf_0.3.2_darwin_arm64.tar.gz"
-      sha256 "d4d2da90902a96bf69e4a5809e834c0380a0acfef15ccd5b65e3624b1912e9de"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.3/kafka-perf_0.3.3_darwin_arm64.tar.gz"
+      sha256 "f230f633417fc21fea4b096a4b62db2095d8406f543fefac5db3da9ba1702403"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.2/kafka-perf_0.3.2_linux_amd64.tar.gz"
-      sha256 "c240f1dbcf77740e788997b6c1769f9ec02c38bc7faf6f5797490f87a73431bc"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.3/kafka-perf_0.3.3_linux_amd64.tar.gz"
+      sha256 "e00ccc603d6f243f08505c479add0bfd35bc75b52d9f20107b7def6fe9bb6dde"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.2/kafka-perf_0.3.2_linux_arm64.tar.gz"
-      sha256 "7cb2b315792d5b809550068aa09697e418ce7bfd93e5385a4a0d022960ae5ebf"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.3/kafka-perf_0.3.3_linux_arm64.tar.gz"
+      sha256 "7cb3c597631e45dec9bf67a92de0c0e8fbcd221476eabe0b532359a467f8c758"
     end
   end
 
