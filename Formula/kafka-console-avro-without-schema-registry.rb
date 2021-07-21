@@ -5,28 +5,28 @@
 class KafkaConsoleAvroWithoutSchemaRegistry < Formula
   desc "Tail kafka avro topic data without confluent schema registry overhead"
   homepage "https://github.com/kishaningithub/kafka-console-avro-without-schema-registry"
-  version "0.3.1"
+  version "0.4.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-console-avro-without-schema-registry/releases/download/v0.3.1/kafka-console-avro-without-schema-registry_0.3.1_darwin_amd64.tar.gz"
-      sha256 "d6eae3f33d0f9634eee9178bbc485547c21e2f6573f9fbf970507637c8042829"
+      url "https://github.com/kishaningithub/kafka-console-avro-without-schema-registry/releases/download/v0.4.0/kafka-console-avro-without-schema-registry_0.4.0_darwin_amd64.tar.gz"
+      sha256 "8b90db77ecfd02e44ccaf736d87089eb73f802d113c64fca0236b24292bedf9e"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-console-avro-without-schema-registry/releases/download/v0.3.1/kafka-console-avro-without-schema-registry_0.3.1_darwin_arm64.tar.gz"
-      sha256 "d4f258da434b557d30d3ee2238d076f6b8e23855653ecf2ed4a0f109682586b4"
+      url "https://github.com/kishaningithub/kafka-console-avro-without-schema-registry/releases/download/v0.4.0/kafka-console-avro-without-schema-registry_0.4.0_darwin_arm64.tar.gz"
+      sha256 "ce02f3f6cce67ef10c71ec727e0e607c431b90065d2f6e1993c7161d79118b6f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-console-avro-without-schema-registry/releases/download/v0.3.1/kafka-console-avro-without-schema-registry_0.3.1_linux_amd64.tar.gz"
-      sha256 "bafae739b00d3d76526fc168f4d5a0b531319fbb31cbfa80f25e8ea4fe41b2a4"
+      url "https://github.com/kishaningithub/kafka-console-avro-without-schema-registry/releases/download/v0.4.0/kafka-console-avro-without-schema-registry_0.4.0_linux_amd64.tar.gz"
+      sha256 "c95dc42c9b25d634ad883daeec7a4d06a0f09c1d74da00e21e88c79256fbe3fa"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-console-avro-without-schema-registry/releases/download/v0.3.1/kafka-console-avro-without-schema-registry_0.3.1_linux_arm64.tar.gz"
-      sha256 "d2c3e28693bc20d07ecad632e67e0ae7dc8b763a41956bd9678b0f481cdd732a"
+      url "https://github.com/kishaningithub/kafka-console-avro-without-schema-registry/releases/download/v0.4.0/kafka-console-avro-without-schema-registry_0.4.0_linux_arm64.tar.gz"
+      sha256 "a13fde45bf1ea097bcd084df9cdd5dfceb145efb0a6c50a383aafefca678866d"
     end
   end
 
