@@ -5,28 +5,28 @@
 class KafkaPerf < Formula
   desc "Get performance metrics based on kafka events"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.3.4"
+  version "0.3.5"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.4/kafka-perf_0.3.4_darwin_amd64.tar.gz"
-      sha256 "9abe92ad0fa84fc8ad741adf00495af501952e4a3e2914bd8561ed18105eed7c"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.5/kafka-perf_0.3.5_darwin_amd64.tar.gz"
+      sha256 "73b6260e7d9d71bd317296421729b7bfd26b4c14fced1687f5d7fe52d3bab2b0"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.4/kafka-perf_0.3.4_darwin_arm64.tar.gz"
-      sha256 "f2bf63a74f912356672d838507f3d7f3b8e8edbe963b75c29a3af8d099796691"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.5/kafka-perf_0.3.5_darwin_arm64.tar.gz"
+      sha256 "b44dbed7fd152ab0fa5c227985777c7c7ebc3d24a70c6a31b5d03a8ac9571b60"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.4/kafka-perf_0.3.4_linux_amd64.tar.gz"
-      sha256 "67ba1b94aabce572f5492a52920fe48026c368c34899f360da5c36fc935053d3"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.5/kafka-perf_0.3.5_linux_amd64.tar.gz"
+      sha256 "d8a705a0cf28538095295d066e8e5d269414ccfc93c432637eec2fb04d160ce9"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.4/kafka-perf_0.3.4_linux_arm64.tar.gz"
-      sha256 "bface7b68a3cb7eee8135342f412dab48f536686f019dac363883168379f107e"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.5/kafka-perf_0.3.5_linux_arm64.tar.gz"
+      sha256 "aa775a710027cafd9dcdc462c52c03ec531df4416978d62909cd088a70080c29"
     end
   end
 
