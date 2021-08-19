@@ -5,28 +5,28 @@
 class MemoryEater < Formula
   desc "Eats memory at a specified constant rate"
   homepage "https://github.com/kishaningithub/memory-eater"
-  version "0.0.1"
+  version "0.0.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.1/memory-eater_0.0.1_darwin_amd64.tar.gz"
-      sha256 "91b3b31cb7fa37bb8ab01c0cf917b67c9ea25592a6dbdc313f8be0648c72ecd6"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.2/memory-eater_0.0.2_darwin_amd64.tar.gz"
+      sha256 "035a254383bf663d969a4b9d3d3c079a953d27c596e0dc11fd9d2ae10fd9806b"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.1/memory-eater_0.0.1_darwin_arm64.tar.gz"
-      sha256 "9240f55db0e9586d2c07ee0f9ad93758b55d965b33c41b8166f1e62a59e1f385"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.2/memory-eater_0.0.2_darwin_arm64.tar.gz"
+      sha256 "5eb9435a5386875e18c1bebbcfa3f43e9c7d5a93b4be06c9aebbdb3335ff26ba"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.1/memory-eater_0.0.1_linux_amd64.tar.gz"
-      sha256 "9aae6d2ce4b3aeebb685f8f5cd5d2fea4d5e617791b19a6899cb41d3772f6ca0"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.2/memory-eater_0.0.2_linux_amd64.tar.gz"
+      sha256 "5f12287bbc4919e124f44b44ab444b6c3313194405797198e88aa75ac0e3f8fd"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.1/memory-eater_0.0.1_linux_arm64.tar.gz"
-      sha256 "217e4738102a07e42f0b71f10458c0acfa4d1ba9b48155359dbea5479853ddb3"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.2/memory-eater_0.0.2_linux_arm64.tar.gz"
+      sha256 "5744f78c3bf10ac7c86f2c3c191009b18dd5fce21a0a3cb4eb667e9c034c33fc"
     end
   end
 
