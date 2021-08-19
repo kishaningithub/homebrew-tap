@@ -5,28 +5,29 @@
 class MemoryEater < Formula
   desc "Eats memory at a specified constant rate"
   homepage "https://github.com/kishaningithub/memory-eater"
-  version "0.0.4"
+  version "0.0.6"
+  license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.4/memory-eater_0.0.4_darwin_amd64.tar.gz"
-      sha256 "eb01e688506a3dbc049a83c840db56e661046c4c064e6e743b813d935987354c"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.6/memory-eater_0.0.6_darwin_amd64.tar.gz"
+      sha256 "487ba01b1b15af4b5825cb507367f96765383a9ceddf9354ba1a176cfba0a5eb"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.4/memory-eater_0.0.4_darwin_arm64.tar.gz"
-      sha256 "3e01c4384c723e75c4b53114a4a0cafb247337f82f9a5e996ac2a67b562e67d6"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.6/memory-eater_0.0.6_darwin_arm64.tar.gz"
+      sha256 "0bda0e783d85a0d888f66a509a6d44baba7d49707c280dadd94b11b96f03dc70"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.4/memory-eater_0.0.4_linux_amd64.tar.gz"
-      sha256 "340f4d12c28f061d16ac9900c458a904f9c328899c5c17a1d505e554ccaa91b5"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.6/memory-eater_0.0.6_linux_amd64.tar.gz"
+      sha256 "f74425d7e5c05a1263a89f5ae48e7aae2bbcef4acbad46cb2813ab7b77775fd9"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.4/memory-eater_0.0.4_linux_arm64.tar.gz"
-      sha256 "fc959e068106aa0329932787b0ee915812850af90542109b80f431b72827aad5"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.6/memory-eater_0.0.6_linux_arm64.tar.gz"
+      sha256 "60e5aefb282fcf7d67c4a8d7837aacacdea7b9000e94fc53081e8735e21c9725"
     end
   end
 
