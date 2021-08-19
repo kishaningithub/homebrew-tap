@@ -5,28 +5,28 @@
 class MemoryEater < Formula
   desc "Eats memory at a specified constant rate"
   homepage "https://github.com/kishaningithub/memory-eater"
-  version "0.0.3"
+  version "0.0.4"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.3/memory-eater_0.0.3_darwin_amd64.tar.gz"
-      sha256 "5a5a5fee19bca7dc68c59a3f45c996fa3fab090ff8141774f46bf145cdc6fb7f"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.4/memory-eater_0.0.4_darwin_amd64.tar.gz"
+      sha256 "eb01e688506a3dbc049a83c840db56e661046c4c064e6e743b813d935987354c"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.3/memory-eater_0.0.3_darwin_arm64.tar.gz"
-      sha256 "c837983c3e051c56a688874f78f4a8517d537e7410a06cd2e35b6c13df1ce70c"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.4/memory-eater_0.0.4_darwin_arm64.tar.gz"
+      sha256 "3e01c4384c723e75c4b53114a4a0cafb247337f82f9a5e996ac2a67b562e67d6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.3/memory-eater_0.0.3_linux_amd64.tar.gz"
-      sha256 "b483409e3d098fa3bfc414d4810a11b7bb3c14ca88d139ee0f917b0977a1cedf"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.4/memory-eater_0.0.4_linux_amd64.tar.gz"
+      sha256 "340f4d12c28f061d16ac9900c458a904f9c328899c5c17a1d505e554ccaa91b5"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.3/memory-eater_0.0.3_linux_arm64.tar.gz"
-      sha256 "c38e26185d8d5613455ce05097c42ff408e8bf9e5905991aa1745d2e1c04d181"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.4/memory-eater_0.0.4_linux_arm64.tar.gz"
+      sha256 "fc959e068106aa0329932787b0ee915812850af90542109b80f431b72827aad5"
     end
   end
 
