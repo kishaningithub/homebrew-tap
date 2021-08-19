@@ -5,28 +5,28 @@
 class MemoryEater < Formula
   desc "Eats memory at a specified constant rate"
   homepage "https://github.com/kishaningithub/memory-eater"
-  version "0.0.2"
+  version "0.0.3"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.2/memory-eater_0.0.2_darwin_amd64.tar.gz"
-      sha256 "035a254383bf663d969a4b9d3d3c079a953d27c596e0dc11fd9d2ae10fd9806b"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.3/memory-eater_0.0.3_darwin_amd64.tar.gz"
+      sha256 "5a5a5fee19bca7dc68c59a3f45c996fa3fab090ff8141774f46bf145cdc6fb7f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.2/memory-eater_0.0.2_darwin_arm64.tar.gz"
-      sha256 "5eb9435a5386875e18c1bebbcfa3f43e9c7d5a93b4be06c9aebbdb3335ff26ba"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.3/memory-eater_0.0.3_darwin_arm64.tar.gz"
+      sha256 "c837983c3e051c56a688874f78f4a8517d537e7410a06cd2e35b6c13df1ce70c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.2/memory-eater_0.0.2_linux_amd64.tar.gz"
-      sha256 "5f12287bbc4919e124f44b44ab444b6c3313194405797198e88aa75ac0e3f8fd"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.3/memory-eater_0.0.3_linux_amd64.tar.gz"
+      sha256 "b483409e3d098fa3bfc414d4810a11b7bb3c14ca88d139ee0f917b0977a1cedf"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.2/memory-eater_0.0.2_linux_arm64.tar.gz"
-      sha256 "5744f78c3bf10ac7c86f2c3c191009b18dd5fce21a0a3cb4eb667e9c034c33fc"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.3/memory-eater_0.0.3_linux_arm64.tar.gz"
+      sha256 "c38e26185d8d5613455ce05097c42ff408e8bf9e5905991aa1745d2e1c04d181"
     end
   end
 
