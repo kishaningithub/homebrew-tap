@@ -5,29 +5,29 @@
 class MemoryEater < Formula
   desc "Eats memory at a specified constant rate"
   homepage "https://github.com/kishaningithub/memory-eater"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.7/memory-eater_0.0.7_darwin_amd64.tar.gz"
-      sha256 "ff36abef1ea4998da50509217768b99fa9de97f253350d1ef543b2ac06d0fa80"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.8/memory-eater_0.0.8_darwin_amd64.tar.gz"
+      sha256 "6f750d4aae71965a37deaecd2d1b252c47bcef9f07e5fb07fb2463fdd61bc217"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.7/memory-eater_0.0.7_darwin_arm64.tar.gz"
-      sha256 "57c77c273f50cd669eb909407b39c2279c2ba9478902ef1a4d988c6960d674b9"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.8/memory-eater_0.0.8_darwin_arm64.tar.gz"
+      sha256 "a5d33e5685d8d7de977dd555ca0afb4b45b76e21fbc3e58eb1eb8a05e03215e2"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.7/memory-eater_0.0.7_linux_amd64.tar.gz"
-      sha256 "b978c9554583ccdf3df65e047a7ffdbf6787d2cd18563456a0ef8bba69b4225e"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.8/memory-eater_0.0.8_linux_amd64.tar.gz"
+      sha256 "0ab1012066191125047038d9e9890463fe17bd42696e40441d69b1ce73b8ec26"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.7/memory-eater_0.0.7_linux_arm64.tar.gz"
-      sha256 "7d06fd8e448b900b36caf165fbd538caea4db458c9d8cc682d1165e2510e690c"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.8/memory-eater_0.0.8_linux_arm64.tar.gz"
+      sha256 "3bf03fb1c80ca7aa3d54c20c6be8272c28409ada52d18b39a0f6b9a36d9efc57"
     end
   end
 
