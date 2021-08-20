@@ -5,29 +5,29 @@
 class MemoryEater < Formula
   desc "Eats memory at a specified constant rate"
   homepage "https://github.com/kishaningithub/memory-eater"
-  version "0.0.8"
+  version "0.0.9"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.8/memory-eater_0.0.8_darwin_amd64.tar.gz"
-      sha256 "6f750d4aae71965a37deaecd2d1b252c47bcef9f07e5fb07fb2463fdd61bc217"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.9/memory-eater_0.0.9_darwin_amd64.tar.gz"
+      sha256 "da6d40c6a117017cd0020948ac52deb7e6c9697b56deef80adbc0756466abfa6"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.8/memory-eater_0.0.8_darwin_arm64.tar.gz"
-      sha256 "a5d33e5685d8d7de977dd555ca0afb4b45b76e21fbc3e58eb1eb8a05e03215e2"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.9/memory-eater_0.0.9_darwin_arm64.tar.gz"
+      sha256 "48ec8d5b1504930b1b08a501c207780612b19a5ac475f06aa85b8e92790c625a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.8/memory-eater_0.0.8_linux_amd64.tar.gz"
-      sha256 "0ab1012066191125047038d9e9890463fe17bd42696e40441d69b1ce73b8ec26"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.9/memory-eater_0.0.9_linux_amd64.tar.gz"
+      sha256 "fa12afb47014deb08635d076e712bfc6ca17ba4315483cb2acbe61943b49caef"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.8/memory-eater_0.0.8_linux_arm64.tar.gz"
-      sha256 "3bf03fb1c80ca7aa3d54c20c6be8272c28409ada52d18b39a0f6b9a36d9efc57"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.9/memory-eater_0.0.9_linux_arm64.tar.gz"
+      sha256 "651daa7c907805fbb877f8c48195bf548500630bac71a341e6f642dc8cd1367f"
     end
   end
 
