@@ -5,28 +5,29 @@
 class KafkaPerf < Formula
   desc "Get performance metrics based on kafka events"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.3.5"
+  version "0.3.6"
+  license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.5/kafka-perf_0.3.5_darwin_amd64.tar.gz"
-      sha256 "73b6260e7d9d71bd317296421729b7bfd26b4c14fced1687f5d7fe52d3bab2b0"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.6/kafka-perf_0.3.6_darwin_amd64.tar.gz"
+      sha256 "86c07ee6bb2dc912a3058db54f2fb921986345cce10596caaa930c1576791f6f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.5/kafka-perf_0.3.5_darwin_arm64.tar.gz"
-      sha256 "b44dbed7fd152ab0fa5c227985777c7c7ebc3d24a70c6a31b5d03a8ac9571b60"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.6/kafka-perf_0.3.6_darwin_arm64.tar.gz"
+      sha256 "841de12b5d2cd6d31e69af2480217569e765b05289e940a75ff976eb7a9cc16d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.5/kafka-perf_0.3.5_linux_amd64.tar.gz"
-      sha256 "d8a705a0cf28538095295d066e8e5d269414ccfc93c432637eec2fb04d160ce9"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.6/kafka-perf_0.3.6_linux_amd64.tar.gz"
+      sha256 "021f9b2d7e72068ae91eabdc34807ecb6a8a3035c331e32526e10c932e57e9d5"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.5/kafka-perf_0.3.5_linux_arm64.tar.gz"
-      sha256 "aa775a710027cafd9dcdc462c52c03ec531df4416978d62909cd088a70080c29"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.6/kafka-perf_0.3.6_linux_arm64.tar.gz"
+      sha256 "6e6f5bd62d200368dd3dcbf7b659e70c13f61e5c821322bfb04de8baf624498c"
     end
   end
 
