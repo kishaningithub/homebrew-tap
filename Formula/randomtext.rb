@@ -5,28 +5,28 @@
 class Randomtext < Formula
   desc "Command line random text generator"
   homepage "https://github.com/kishaningithub/randomtext"
-  version "1.0.1"
+  version "1.0.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.0.1/randomtext_1.0.1_darwin_amd64.tar.gz"
-      sha256 "ef4137c9e4263d809d6ebabbe8cd9f1bee199804afd380522434914a40e6c472"
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.0.2/randomtext_1.0.2_darwin_amd64.tar.gz"
+      sha256 "e796d7abf4dee819aac0ceb21170c7994aa12a398ad7b63a0811da19f7ed7c4b"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.0.1/randomtext_1.0.1_darwin_arm64.tar.gz"
-      sha256 "49e142df359962728757f9c66c1efffa165deb32f4e0e01faa104e9ef351bff1"
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.0.2/randomtext_1.0.2_darwin_arm64.tar.gz"
+      sha256 "a9a84de2405c55864e0f5b3c2bbb19688150ba46b25a5a85d47a48736c747cc9"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.0.1/randomtext_1.0.1_linux_amd64.tar.gz"
-      sha256 "da8358c6782440fddcf9f0583a9bf039311c17d41eb8d457fe2b5b5f6459eeeb"
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.0.2/randomtext_1.0.2_linux_amd64.tar.gz"
+      sha256 "7c6057524060e7d852cfe5e6a54d436b99b514d174de26a1d2f58ed18a29467f"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.0.1/randomtext_1.0.1_linux_arm64.tar.gz"
-      sha256 "f9670905c1a508227abcd77767a35cde8ce96092558f9e9d3a95af81ec6487b7"
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.0.2/randomtext_1.0.2_linux_arm64.tar.gz"
+      sha256 "08483756d36c7bde1c017696f9a590f64d3b0daee4c76d124b411b87f21edf3a"
     end
   end
 
