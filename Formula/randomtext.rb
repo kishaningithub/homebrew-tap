@@ -5,32 +5,43 @@
 class Randomtext < Formula
   desc "Command line random text generator"
   homepage "https://github.com/kishaningithub/randomtext"
-  version "1.1.0"
-  bottle :unneeded
+  version "1.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.1.0/randomtext_1.1.0_darwin_amd64.tar.gz"
-      sha256 "8cea7acabe5450cf3f847cefa41e78e54e5383e6da8b6707fcdc5fc72c507a6d"
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.0/randomtext_1.2.0_darwin_amd64.tar.gz"
+      sha256 "2b603b0549e1fe52ca72f4e9815526615a2ad372d6f29c928b4271d00b58a1b6"
+
+      def install
+        bin.install "randomtext"
+      end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.1.0/randomtext_1.1.0_darwin_arm64.tar.gz"
-      sha256 "c88770d33d444852028e65aa05d7a331fac59523a6b300de371430203a98d9f1"
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.0/randomtext_1.2.0_darwin_arm64.tar.gz"
+      sha256 "a5badb2f1c826dfb298f62617e909701492023ce259274bb20449e55a84401c7"
+
+      def install
+        bin.install "randomtext"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.1.0/randomtext_1.1.0_linux_amd64.tar.gz"
-      sha256 "ba7031c9e5241de57c185030ef15765310de047e5ba108057cc7006cc1b85b2f"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.1.0/randomtext_1.1.0_linux_arm64.tar.gz"
-      sha256 "bf2156f311084a7c99a010c8b807f48bb35125b481c8e525b39c57e6894dc094"
-    end
-  end
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.0/randomtext_1.2.0_linux_arm64.tar.gz"
+      sha256 "7a42874a6530e49a5116bb2f412a99d22ce855a37fbdfc72125b6d1130d94060"
 
-  def install
-    bin.install "randomtext"
+      def install
+        bin.install "randomtext"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.0/randomtext_1.2.0_linux_amd64.tar.gz"
+      sha256 "b3ceca93c78fe76b65e88f0d1bbff761789899e1f9bba99f3d723c6aad7c62ab"
+
+      def install
+        bin.install "randomtext"
+      end
+    end
   end
 end
