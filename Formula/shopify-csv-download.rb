@@ -5,27 +5,44 @@
 class ShopifyCsvDownload < Formula
   desc "Download a shopify site in a csv format that the shopify importer understands"
   homepage "https://github.com/kishaningithub/shopify-csv-download"
-  version "0.11.4"
-  bottle :unneeded
+  version "0.11.7"
+  license "MIT"
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.4/shopify-csv-download_0.11.4_darwin_amd64.tar.gz"
-    sha256 "081d8b158da8ab5b3d171b5eba8b607f4bbf17b3a86459b7fb24676c56bc68c1"
-  end
-  if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.4/shopify-csv-download_0.11.4_darwin_arm64.tar.gz"
-    sha256 "df94f1ab16b08bc1ce045ca74d6c9f5571ba6d361ba224a8c0e79f22f057294b"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.4/shopify-csv-download_0.11.4_linux_amd64.tar.gz"
-    sha256 "a974e9635af15de62d1a184d7d3711dc460b3c16ee959a06b070ec0c6d8cdbf5"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.4/shopify-csv-download_0.11.4_linux_arm64.tar.gz"
-    sha256 "6dc1c8d595a3d34c88bf3211310a78daa35b42775e4d02ae0f5b93916a355cc0"
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.7/shopify-csv-download_0.11.7_darwin_arm64.tar.gz"
+      sha256 "8776af4caaa58aca5eaf4c2872879a7277b87b1c1af9483412d5cc7c0a244f7c"
+
+      def install
+        bin.install "shopify-csv-download"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.7/shopify-csv-download_0.11.7_darwin_amd64.tar.gz"
+      sha256 "df11f502f24af05b8db1e65f4c4a8d01d9fcd32f822621df7032ed1f832ccc2d"
+
+      def install
+        bin.install "shopify-csv-download"
+      end
+    end
   end
 
-  def install
-    bin.install "shopify-csv-download"
+  on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.7/shopify-csv-download_0.11.7_linux_arm64.tar.gz"
+      sha256 "eaf883d33cf06fa1542d1e1126581a750102476f3ace6c6d078a63c0206a1cfc"
+
+      def install
+        bin.install "shopify-csv-download"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/shopify-csv-download/releases/download/v0.11.7/shopify-csv-download_0.11.7_linux_amd64.tar.gz"
+      sha256 "17542847c616bfa755aeaf67cbdd2f2ce31efeb44daadc60df0c843628f9dc41"
+
+      def install
+        bin.install "shopify-csv-download"
+      end
+    end
   end
 end
