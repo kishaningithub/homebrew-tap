@@ -5,33 +5,44 @@
 class MemoryEater < Formula
   desc "Eats memory at a specified constant rate"
   homepage "https://github.com/kishaningithub/memory-eater"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.9/memory-eater_0.0.9_darwin_amd64.tar.gz"
-      sha256 "da6d40c6a117017cd0020948ac52deb7e6c9697b56deef80adbc0756466abfa6"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.9/memory-eater_0.0.9_darwin_arm64.tar.gz"
-      sha256 "48ec8d5b1504930b1b08a501c207780612b19a5ac475f06aa85b8e92790c625a"
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.10/memory-eater_0.0.10_darwin_arm64.tar.gz"
+      sha256 "94e4cf2b83972138657b199b4e965996cc60fca73ba837004b34e09910f74b03"
+
+      def install
+        bin.install "memory-eater"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.10/memory-eater_0.0.10_darwin_amd64.tar.gz"
+      sha256 "049ea405fef78d55ae83a6f4ed68c1f04fd3af736231f0b385b4d386abdbefb7"
+
+      def install
+        bin.install "memory-eater"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.9/memory-eater_0.0.9_linux_amd64.tar.gz"
-      sha256 "fa12afb47014deb08635d076e712bfc6ca17ba4315483cb2acbe61943b49caef"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.9/memory-eater_0.0.9_linux_arm64.tar.gz"
-      sha256 "651daa7c907805fbb877f8c48195bf548500630bac71a341e6f642dc8cd1367f"
-    end
-  end
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.10/memory-eater_0.0.10_linux_arm64.tar.gz"
+      sha256 "8eea0ca540b8a6caf3ceca5d8bfa6467007a18dfeec5a3959582d5965153f067"
 
-  def install
-    bin.install "memory-eater"
+      def install
+        bin.install "memory-eater"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/memory-eater/releases/download/v0.0.10/memory-eater_0.0.10_linux_amd64.tar.gz"
+      sha256 "5701a69eb8efa94908816fdd633bd56748ba6061f8b1092ef97293aa6468d404"
+
+      def install
+        bin.install "memory-eater"
+      end
+    end
   end
 end
