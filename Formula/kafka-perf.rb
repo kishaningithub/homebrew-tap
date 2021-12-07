@@ -5,33 +5,44 @@
 class KafkaPerf < Formula
   desc "Get performance metrics based on kafka events"
   homepage "https://github.com/kishaningithub/kafka-perf"
-  version "0.3.6"
+  version "0.3.7"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.6/kafka-perf_0.3.6_darwin_amd64.tar.gz"
-      sha256 "86c07ee6bb2dc912a3058db54f2fb921986345cce10596caaa930c1576791f6f"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.7/kafka-perf_0.3.7_darwin_amd64.tar.gz"
+      sha256 "6e433d564446d81713a87031fa2e78396d9ad1a98854193f749d469c13910b53"
+
+      def install
+        bin.install "kafka-perf"
+      end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.6/kafka-perf_0.3.6_darwin_arm64.tar.gz"
-      sha256 "841de12b5d2cd6d31e69af2480217569e765b05289e940a75ff976eb7a9cc16d"
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.7/kafka-perf_0.3.7_darwin_arm64.tar.gz"
+      sha256 "1782674111b8a52e2e3440e3b6ea9f6fa83201eaa3fa64a5a7167a5e22333f19"
+
+      def install
+        bin.install "kafka-perf"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.6/kafka-perf_0.3.6_linux_amd64.tar.gz"
-      sha256 "021f9b2d7e72068ae91eabdc34807ecb6a8a3035c331e32526e10c932e57e9d5"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.6/kafka-perf_0.3.6_linux_arm64.tar.gz"
-      sha256 "6e6f5bd62d200368dd3dcbf7b659e70c13f61e5c821322bfb04de8baf624498c"
-    end
-  end
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.7/kafka-perf_0.3.7_linux_arm64.tar.gz"
+      sha256 "288f0837a384dbc7c23627318297549221f4c235b36a0462b691f585e133917d"
 
-  def install
-    bin.install "kafka-perf"
+      def install
+        bin.install "kafka-perf"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/kafka-perf/releases/download/v0.3.7/kafka-perf_0.3.7_linux_amd64.tar.gz"
+      sha256 "0b3a5ffb4d946c33a50d8de2bd83db9cb3de36e686d73aa50499f5c532f65d80"
+
+      def install
+        bin.install "kafka-perf"
+      end
+    end
   end
 end
