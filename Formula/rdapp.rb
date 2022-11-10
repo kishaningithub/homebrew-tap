@@ -5,21 +5,21 @@
 class Rdapp < Formula
   desc "rdapp - redshift data api postgres proxy"
   homepage "https://github.com/kishaningithub/rdapp"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/rdapp/releases/download/v0.3.0/rdapp_0.3.0_darwin_arm64.tar.gz"
-      sha256 "5ccff43f6930c01e4ab7bc21f137064e0f2fed3cc065d2ef00b58190478777ec"
+      url "https://github.com/kishaningithub/rdapp/releases/download/v0.4.0/rdapp_0.4.0_darwin_arm64.tar.gz"
+      sha256 "5cf6162196810788788ad5a94f71a3945e41a820592d23b3c8b3ddf56c4d008e"
 
       def install
         bin.install "rdapp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/rdapp/releases/download/v0.3.0/rdapp_0.3.0_darwin_amd64.tar.gz"
-      sha256 "76e2caa7d1ad72b7204d65c91305e5a44f5d75ec1fc54699f76a1a766f59e0fe"
+      url "https://github.com/kishaningithub/rdapp/releases/download/v0.4.0/rdapp_0.4.0_darwin_amd64.tar.gz"
+      sha256 "f05048ff34649b6664493bbbee96566b48cca58cf7aaab81810e82ab91ac46ec"
 
       def install
         bin.install "rdapp"
@@ -28,17 +28,17 @@ class Rdapp < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/rdapp/releases/download/v0.3.0/rdapp_0.3.0_linux_arm64.tar.gz"
-      sha256 "0c3f33b3872d88a6c837b30fa6e1ea960ced0e63ba208db03d23f45cbc0e2dcc"
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/rdapp/releases/download/v0.4.0/rdapp_0.4.0_linux_amd64.tar.gz"
+      sha256 "4da2c723caa0f1a3c3ebda4bd6fe42ef1f17ec8da0c9c48eeec0772b2ca126c2"
 
       def install
         bin.install "rdapp"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/rdapp/releases/download/v0.3.0/rdapp_0.3.0_linux_amd64.tar.gz"
-      sha256 "a615fd7da4edb1b0fa84640970b323b3e31b164f8156997c650dfcdfc8911bca"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kishaningithub/rdapp/releases/download/v0.4.0/rdapp_0.4.0_linux_arm64.tar.gz"
+      sha256 "a4947efc48f55e4751f3a2f83a619d1a3b1caee69023c586dc8917a20820de0b"
 
       def install
         bin.install "rdapp"
