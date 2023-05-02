@@ -5,20 +5,21 @@
 class Randomtext < Formula
   desc "Command line random text generator"
   homepage "https://github.com/kishaningithub/randomtext"
-  version "1.2.0"
+  version "1.2.1"
+  license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.0/randomtext_1.2.0_darwin_amd64.tar.gz"
-      sha256 "2b603b0549e1fe52ca72f4e9815526615a2ad372d6f29c928b4271d00b58a1b6"
+    if Hardware::CPU.arm?
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.1/randomtext_1.2.1_darwin_arm64.tar.gz"
+      sha256 "ee37a919003e5fa1db821b07ac67f0737d1ad3dce4d08e03dbab16f0f3a0f5dd"
 
       def install
         bin.install "randomtext"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.0/randomtext_1.2.0_darwin_arm64.tar.gz"
-      sha256 "a5badb2f1c826dfb298f62617e909701492023ce259274bb20449e55a84401c7"
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.1/randomtext_1.2.1_darwin_amd64.tar.gz"
+      sha256 "c18475c1f160bc35b8ffc03d77444be821fe7b16c8c5cf1d6708bf628f8d37aa"
 
       def install
         bin.install "randomtext"
@@ -28,16 +29,16 @@ class Randomtext < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.0/randomtext_1.2.0_linux_arm64.tar.gz"
-      sha256 "7a42874a6530e49a5116bb2f412a99d22ce855a37fbdfc72125b6d1130d94060"
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.1/randomtext_1.2.1_linux_arm64.tar.gz"
+      sha256 "f61def165b30c775a8d9ead9828a91ad8286d46e49963999c0117da697511873"
 
       def install
         bin.install "randomtext"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.0/randomtext_1.2.0_linux_amd64.tar.gz"
-      sha256 "b3ceca93c78fe76b65e88f0d1bbff761789899e1f9bba99f3d723c6aad7c62ab"
+      url "https://github.com/kishaningithub/randomtext/releases/download/v1.2.1/randomtext_1.2.1_linux_amd64.tar.gz"
+      sha256 "b3a19e7e3bef40e17e8e5570f583844272a5b2013f8b57208e50bc6e930ad075"
 
       def install
         bin.install "randomtext"
