@@ -5,21 +5,21 @@
 class Terralens < Formula
   desc "See your Terraform state world with clarity and precision - TerraLens, your visual command center for infrastructure insight!"
   homepage "https://github.com/kishaningithub/terralens"
-  version "0.0.1"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/terralens/releases/download/v0.0.1/terralens_0.0.1_darwin_amd64.tar.gz"
-      sha256 "448df9dc623bc61262a2f81574be684d9d1c73ebbb289f0a851d3a369464ba78"
+    if Hardware::CPU.arm?
+      url "https://github.com/kishaningithub/terralens/releases/download/v0.1.0/terralens_0.1.0_darwin_arm64.tar.gz"
+      sha256 "b5c244a1c40c797d3838f9841760ee4b7ebb1b09609d90512d45d0bd2dbeeaf7"
 
       def install
         bin.install "terralens"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/kishaningithub/terralens/releases/download/v0.0.1/terralens_0.0.1_darwin_arm64.tar.gz"
-      sha256 "72ea895665d3c743a092e4d66cfbadc40726260c78c0ab8a029bdcc44440a949"
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/terralens/releases/download/v0.1.0/terralens_0.1.0_darwin_amd64.tar.gz"
+      sha256 "c7879851a3c70e169d5ddea996c5166506753a067fd09e56cfbd6079634167dd"
 
       def install
         bin.install "terralens"
@@ -28,17 +28,17 @@ class Terralens < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kishaningithub/terralens/releases/download/v0.0.1/terralens_0.0.1_linux_arm64.tar.gz"
-      sha256 "d5bec7e1c1707efbcbc82346f298ea5914c35253e3509949f2ed8f0ad3b1e213"
+    if Hardware::CPU.intel?
+      url "https://github.com/kishaningithub/terralens/releases/download/v0.1.0/terralens_0.1.0_linux_amd64.tar.gz"
+      sha256 "141f80f8aa222def76edc95fd17a541fd1139f24c211115489a5647dbbb70e26"
 
       def install
         bin.install "terralens"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kishaningithub/terralens/releases/download/v0.0.1/terralens_0.0.1_linux_amd64.tar.gz"
-      sha256 "f1dd0c365ecf73a06ec49ea7bec59663cc635d7c6549c5e6cfdcf75e570194c4"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kishaningithub/terralens/releases/download/v0.1.0/terralens_0.1.0_linux_arm64.tar.gz"
+      sha256 "92d375a4b7c4db9ee6a5310ea29172c2b6b69ea8a57a18670f344d73cf0d5a98"
 
       def install
         bin.install "terralens"
