@@ -5,21 +5,21 @@
 class TfImportGen < Formula
   desc "Tool to generate terraform import statements to simplify state migrations from one terraform code base to another"
   homepage "https://github.com/kishaningithub/tf-import-gen"
-  version "0.10.1"
+  version "0.10.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kishaningithub/tf-import-gen/releases/download/v0.10.1/tf-import-gen_0.10.1_darwin_amd64.tar.gz"
-      sha256 "89be07bdd4427daf10fed93ccf6de8c701fb015eafdf23465bed178cbcc040f1"
+      url "https://github.com/kishaningithub/tf-import-gen/releases/download/v0.10.2/tf-import-gen_0.10.2_darwin_amd64.tar.gz"
+      sha256 "b9fe7124122f3fc2d33389f0c15e20c376cdcff6e12e561bdef1e5f10ceb9ca7"
 
       def install
         bin.install "tf-import-gen"
       end
     end
     on_arm do
-      url "https://github.com/kishaningithub/tf-import-gen/releases/download/v0.10.1/tf-import-gen_0.10.1_darwin_arm64.tar.gz"
-      sha256 "f1eb30fa4ab7fbc6e71c4c0671d032893e50f513ac1bdae694f458387e133bb7"
+      url "https://github.com/kishaningithub/tf-import-gen/releases/download/v0.10.2/tf-import-gen_0.10.2_darwin_arm64.tar.gz"
+      sha256 "5af904f84b65f600a8e0845cd1c199592b9bb6fd98a75bababff838810d2d30d"
 
       def install
         bin.install "tf-import-gen"
@@ -30,8 +30,8 @@ class TfImportGen < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kishaningithub/tf-import-gen/releases/download/v0.10.1/tf-import-gen_0.10.1_linux_amd64.tar.gz"
-        sha256 "1581bf749d63ebe606616b4c53ad7dc15eceb7713c82e94caaeb09a263d12cf8"
+        url "https://github.com/kishaningithub/tf-import-gen/releases/download/v0.10.2/tf-import-gen_0.10.2_linux_amd64.tar.gz"
+        sha256 "28d6ddcd9fc06eb6b683c8cd69d263fef7768b2ecc5cc722e5fb4fb4834eb7d2"
 
         def install
           bin.install "tf-import-gen"
@@ -40,8 +40,8 @@ class TfImportGen < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kishaningithub/tf-import-gen/releases/download/v0.10.1/tf-import-gen_0.10.1_linux_arm64.tar.gz"
-        sha256 "f2bc9703f526555d9020c448ea551817a6333c192a91f8e1b6fe9ab1635add1a"
+        url "https://github.com/kishaningithub/tf-import-gen/releases/download/v0.10.2/tf-import-gen_0.10.2_linux_arm64.tar.gz"
+        sha256 "59a43aaf0f767af5bc6bbb03a2b98970f0b8c38be09c020b083b1b34808f7131"
 
         def install
           bin.install "tf-import-gen"
